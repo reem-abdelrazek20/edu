@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
+
+body { 
+      direction: rtl;
+        font-family: 'Cairo', sans-serif; 
+        background: #f3f4f6; }
+ header { 
+      background:#0ea5e9; 
+      color:#fff; 
+      padding:1rem;
+      text-align:center;
+      font-weight:700; }
+p {
+    font-size: 20px;
+    font-weight: 900;}
+
+    .Container {max-width: 720px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    box-shadow: 0px 0px 9px;
+    border-radius: 10px; }
+
+.option {
+  display: block;
+  padding: 12px 20px;
+  margin: 8px;
+  border: 1px solid #38bdf8; /* أزرق فاتح جميل */
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: -webkit-fill-available;
+}
+
+.option:hover {
+  transform: scale(1.05);
+}
+
+
+    .Next,.Previous ,.restart {
+padding: 12px 20px;
+  margin: 8px;
+  border: 1px solid #38bdf8; 
+  border-radius: 12px;
+  background-color: #0ea5e9;
+  color: #fff8dc; 
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+      
+}
+.Previous{padding: 12px 20px;
+  margin: 8px;
+  border: 1px solid #38bdf8; 
+  border-radius: 12px;
+  background-color: #f1f4f5;
+  color: #0f0f0e; 
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+      }
+.question-number {
+  font-weight: bold;
+  color: #0ea5e9;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.top{ display: flex;
+    align-items: center;
+    justify-content: space-between;}
+  .result{text-align: center;}
+    
