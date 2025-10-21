@@ -21,6 +21,7 @@ function showQuestion() {
       <div class="result">
         <h2>انتهيت من الأسئلة!</h2>
         <p>نتيجتك النهائية: ${score} من ${questions.length}</p>
+           <h4>"بالتوفيق!  لو استفدت، ادعولي "</h4>
         <button class="restart">إعادة المحاولة </button>
       </div>
     `;
@@ -56,6 +57,13 @@ function showQuestion() {
           score++;
         } else {
           btn.style.backgroundColor = "red"; 
+            document.querySelectorAll(".option").forEach(optionBtn => {
+          if(optionBtn.textContent === questions[number].answer) {
+            optionBtn.style.backgroundColor = "green";
+          }
+        });
+        
+
         }
         answered.push(number); 
       }
