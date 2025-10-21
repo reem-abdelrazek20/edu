@@ -2,7 +2,7 @@ const container = document.querySelector(".container");
 const box = document.querySelector(".box-questions");
 const buttonPrevious = document.querySelector(".Previous");
 const buttonNext = document.querySelector(".Next");
-
+const button = document.querySelector(".button");
 let number = 0; 
 let questions = []; 
 let score = 0;
@@ -17,12 +17,13 @@ fetch("/questions.json")
 
 function showQuestion() {
       if (number >= questions.length) {
+        button.innerHTML=`<button class="restart">إعادة المحاولة </button>`
     box.innerHTML = `
       <div class="result">
         <h2>انتهيت من الأسئلة!</h2>
         <p>نتيجتك النهائية: ${score} من ${questions.length}</p>
            <h4>"بالتوفيق!  لو استفدت، ادعولي "</h4>
-        <button class="restart">إعادة المحاولة </button>
+        
       </div>
     `;
     
