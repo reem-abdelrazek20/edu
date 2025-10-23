@@ -54,13 +54,14 @@ padding: 12px 20px;
 }
 .Previous{padding: 12px 20px;
   margin: 8px;
-  border: 1px solid #38bdf8; 
+  border: 1px solid #5c5c5c; 
   border-radius: 12px;
-  background-color: #f1f4f5;
-  color: #0f0f0e; 
+  background-color: #9e9e9e;
+  color: #ffffff; 
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
+  
 
       }
 .question-number {
